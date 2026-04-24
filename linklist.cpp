@@ -7,3 +7,6 @@ class node
         int noMHS;
         node *next;
 };
+
+class linklist
+{}
