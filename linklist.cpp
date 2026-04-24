@@ -9,4 +9,7 @@ class node
 };
 
 class linklist
-{}
+{
+    node *start;
+    
+}
