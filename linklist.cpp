@@ -116,7 +116,38 @@ int main()
     char ch;
     do
     {
-       cout /* code */
+    {
+        cout << endl
+             << "menu";
+        cout << endl
+             << "1. Menambah data kedalam list" << endl;
+        cout << "2. Menghapus data dari dalam list" << endl;
+        cout << "3. Menampilkan semua data di dalam list" << endl;
+        cout << "4. Menampilkan semua data di dalam list secara terbalik" << endl;
+        cout << "5. mencari data dalam list" << endl;
+        cout << "6. keluar" << endl;
+        cout << endl
+             << "masukan pilihan (1-5): ";
+        cin >> ch;
+        switch (ch)
+        {
+        case '1':
+        {
+            mhs.addNode();
+        }
+        case '2':
+        {
+            if (mhs.listEmpity())
+            {
+                cout << endl
+                     << "List Kosong" << endl;
+                break;     
+            }
+            cout << endl;
+                 << "\nMasukan no mahasiswa yang akan di hapus : ";
+                 cin >> nim;
+        }
+        }
     } while ({condition});
     
 }
