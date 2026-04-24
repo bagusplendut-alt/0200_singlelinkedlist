@@ -14,7 +14,7 @@ class linklist
 public:
     linklist()
     {
-        START = NULL
+        START = NULL;
     }
 
     void addNode()
@@ -23,8 +23,8 @@ public:
         cout << "\nmasukan nomor mahasiswa: ";
         cin >> nim;
 
-        Node *nodebaru = new Node;
-        nodebaru->noMHS = nim;
+        Node *nodeBaru = new Node;
+        nodeBaru->noMHS = nim;
 
         if (START == NULL || nim <= START->noMHS)
         {
@@ -33,7 +33,22 @@ public:
             cout << "\nDuplikasi noMHS tidak di ijinkan\n";
             return;
         }
-        
+        nodeBaru->next = START;
+        START = nodeBaru;
+        return;
 
+        Node *previous = START;
+        Node *current = START;
+        while ((current != NULL) && (nim >= current->noMHS))
+        {
+        if (nim == current->noMHS)
+        {
+            cout << "\nDuplikasi noMHS tidak di ijinkan\n";
+            return;
+        }
+        previous = current;
+        current = current->next;
     }
+    nodeBaru->next = current;
+    previous->next = nodeBaru;
 }
