@@ -1,15 +1,35 @@
 #include <iostream>
 using namespace std;
 
-class node
+class Node
 {
     public:
         int noMHS;
-        node *next;
+        Node *next;
 };
 
 class linklist
 {
-    node *start;
-    
+    Node *START;
+public:
+    linklist()
+    {
+        START = NULL
+    }
+
+    void addNode()
+    {
+        int nim;
+        cout << "\nmasukan nomor mahasiswa: ";
+        cin >> nim;
+
+        Node *nodebaru = new Node;
+        nodebaru->noMHS = nim;
+
+        if (START == NULL || nim <= START->noMHS)
+        {
+            if ((START != NULL) && (nim == START->noMHS))
+        }
+
+    }
 }
