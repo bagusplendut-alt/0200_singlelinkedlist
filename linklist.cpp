@@ -2,4 +2,8 @@
 using namespace std;
 
 class node
-{}
+{
+    public:
+        int noMHS;
+        node *next;
+};
