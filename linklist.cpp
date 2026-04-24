@@ -85,3 +85,38 @@ public:
             delete current;
             return true;
         }
+
+        void traverse()
+        {
+            if (listEmpty())
+            {
+                cout << "\nList Kosong\n";
+            }
+            else
+            {
+                cout << "Data didalam list adalah:\n";
+                Node *currentNode = START;
+                while (currentNode != NULL)
+                {
+                    cout << currentNode->noMhs << endl;
+                    currentNode = currentNode->next;
+                }
+                cout << endl;
+            }
+            
+        }
+
+    }
+};
+
+int main()
+{
+    LinkedList mhs;
+    int nim;
+    char ch;
+    do
+    {
+       cout /* code */
+    } while ({condition});
+    
+}
