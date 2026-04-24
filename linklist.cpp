@@ -29,7 +29,11 @@ public:
         if (START == NULL || nim <= START->noMHS)
         {
             if ((START != NULL) && (nim == START->noMHS))
+        {
+            cout << "\nDuplikasi noMHS tidak di ijinkan\n";
+            return;
         }
+        
 
     }
 }
